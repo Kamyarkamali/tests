@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: roboto;
+  src: url("/src/assets/fonts/Roboto-Medium.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+  /* background-color: #00017b; */
+}
+
+.bell {
+  animation: shake 3s infinite;
+  transform-origin: center center;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  40%,
+  60% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  70%,
+  90% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+}
+
+.borders {
+  border-bottom-right-radius: 30px;
+}
+
+.fillblack {
+  color: #2222;
+}
+
+.fillWhite {
+  color: #ffff;
+}
+
+.sidebar-content::-webkit-scrollbar {
+  display: none;
+}
+
+.stickys {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
